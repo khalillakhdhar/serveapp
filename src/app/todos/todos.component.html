@@ -6,6 +6,7 @@
     <th>Id</th>
     <th>Title</th>
     <th>Completed</th>
+    <th>Action</th>
 
   </tr>
   </thead>
@@ -15,6 +16,7 @@
     <td>{{todo.id}}</td>
     <td>{{todo.title}}</td>
     <td>{{todo.completed}}</td>
+    <td><button (click)="delete(todo.id)" class="btn btn-danger">Supprimer</button></td>
   </tbody>
 
 </table>

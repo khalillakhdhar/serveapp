@@ -20,5 +20,15 @@ export class TodosComponent {
     });
 
   }
+  delete(id:number) {
+    if(confirm("vous êtes sûr de vouloir supprimer ce todo ?"))
+    {
+    this.todoService.deleteTodo(id).subscribe(response => {
+      console.log("response",response);
+      console.log("deleted"+id)
+      this.getTodos();
+    });
+  }
+  }
 
 }

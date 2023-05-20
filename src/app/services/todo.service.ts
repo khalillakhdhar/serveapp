@@ -25,5 +25,19 @@ export class TodoService {
    // response is an array
 
   }
+  // updateTodo
+  updateTodo(id:number,todo:any) {
+const url = `${this.fakeAPIUrl}/${id}`;
+return this.http.put<any>(url,todo).pipe(map(response => response));
+
+  }
+  // deleteTodo
+  deleteTodo(id:number) {
+    const url = `${this.fakeAPIUrl}/${id}`;
+    return this.http.delete<any>(url).pipe(map(response => response));
+
+
+  }
+
 
 }
