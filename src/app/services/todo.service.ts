@@ -19,5 +19,11 @@ export class TodoService {
 
     );
   }
+  // addTodo()
+  addTodo(data: any) {
+  return this.http.post<any>(this.fakeAPIUrl,data).pipe(map(response => response));
+   // response is an array
+
+  }
 
 }

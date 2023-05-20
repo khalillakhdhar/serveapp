@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { CalculeComponent } from './calcule/calcule.component';
 import { FormsModule } from '@angular/forms';
 import { TodosComponent } from './todos/todos.component';
+import { AddtodosComponent } from './addtodos/addtodos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculeComponent,
-    TodosComponent
+    TodosComponent,
+    AddtodosComponent
   ],
   imports: [
     BrowserModule,
