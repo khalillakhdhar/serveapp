@@ -1,1 +1,5 @@
-<p>calcule works!</p>
+<form (submit)="bilan()">
+  x:<input name="x" [(ngModel)]="x" type="number" min="1"><br>
+  y:<input type="number" [(ngModel)]="y" name="y" min="1"><br>
+  <button type="submit">Calculer</button>
+</form>
